@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formular</title>
+    <title>Calculator</title>
 </head>
 <body>
-    <form action="/submit" method="post">
-        <label for="benutzername">Benutzername:</label>
-        <input type="text" id="benutzername" name="benutzername">
-        <input type="submit" value="Absenden">
+    <h2>Calculator</h2>
+    <form action="/calculate" method="POST">
+        <label for="number">Enter a number:</label>
+        <input type="text" id="number" name="number">
+        <button type="submit">Calculate</button>
     </form>
+    <div id="result">
+        <!-- Hier wird das Ergebnis angezeigt -->
+    </div>
 </body>
 </html>
